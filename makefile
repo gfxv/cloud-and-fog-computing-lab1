@@ -6,6 +6,7 @@ up:
 
 down:
 	docker compose down -v 
+	docker stack rm $(APP_NAME)
 
 deploy:
 	docker compose build app
